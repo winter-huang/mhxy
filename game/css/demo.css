@@ -1,0 +1,48 @@
+/*如来佛的脚底：*/
+
+.footer{
+	background: #272a2c;
+	padding: 20px 0;
+    min-width: 1260px;
+    color: #fff;
+}
+.footer .footer-b{
+    width: 840px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 15px 0 10px;
+    font-size: 12px;
+    font-family: SimSun;
+    line-height: 20px;
+    display: block;
+}
+.footer .top .left{
+    height: 50px;
+    line-height: 50px;
+}
+.footer .top .right{
+    height:50px;
+    margin-left: 20px;
+}
+.footer .top .right ul{
+    margin-bottom:10px;
+}
+.footer .top .right li{
+    float: left;
+    margin-right: 10px;
+}
+.top .right li>a:hover{
+    text-decoration:underline;
+
+}
+.top .right p>a{
+    display: inline-block;
+    line-height: 2.2em;
+    padding:0 8px;
+    background-color: #C81623;
+    color: #fff;
+}
+.top .right p>a:hover{
+    text-decoration:underline;
+
+}

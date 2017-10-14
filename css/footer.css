@@ -1,0 +1,124 @@
+/*如来佛的脚底：*/
+.footer .footer-b {
+  position: absolute;
+  left: 264px;
+  bottom: 120px;
+}
+
+.footer .top .left {
+  height: 50px;
+  line-height: 50px;
+}
+
+.footer .top .right {
+  height: 50px;
+  margin-left: 20px;
+}
+
+.footer .top .right ul {
+  margin-bottom: 10px;
+}
+
+.footer .top .right li {
+  float: left;
+  margin-right: 10px;
+}
+
+.top .right li > a:hover {
+  text-decoration: underline;
+}
+
+.top .right p > a {
+  display: inline-block;
+  line-height: 2.2em;
+  padding: 0 8px;
+  background-color: #C81623;
+  color: #fff;
+}
+
+.top .right p > a:hover {
+  text-decoration: underline;
+}
+.wk {
+  position: absolute;
+  width: 200px;
+  height: 180px;
+  left: 50%;
+  margin-left: -398px;
+  top: 352px;
+  background: url("../img/west_01_3ca39fe.png") no-repeat;
+  animation: play01 1.4s steps(8) infinite;
+}
+
+@-webkit-keyframes play01 {
+  0% {
+    background-position: 0 0
+  }
+
+  100% {
+    background-position: -1600px 0
+  }
+}
+
+.wn {
+  position: absolute;
+  width: 200px;
+  height: 180px;
+  left: 50%;
+  margin-left: -198px;
+  top: 356px;
+  background: url("../img/west_02_47bad19.png") no-repeat;
+  animation: play02 1.4s steps(8) infinite;
+}
+
+@-webkit-keyframes play02 {
+  0% {
+    background-position: 0 0
+  }
+
+  100% {
+    background-position: -1600px 0
+  }
+}
+
+.ts {
+  position: absolute;
+  width: 170px;
+  height: 240px;
+  left: 50%;
+  margin-left: -11px;
+  top: 326px;
+  background: url("../img/west_03_f962447.png") no-repeat;
+  animation: play03 1.4s steps(8) infinite;
+}
+
+@-webkit-keyframes play03 {
+  0% {
+    background-position: 0 0
+  }
+
+  100% {
+    background-position: -1360px 0
+  }
+}
+
+.wj {
+  position: absolute;
+  width: 210px;
+  height: 200px;
+  left: 50%;
+  margin-left: 198px;
+  top: 347px;
+  background: url("../img/west_04_6516d80.png") no-repeat;
+  animation: play04 1.4s steps(8) infinite;
+}
+
+@-webkit-keyframes play04 {
+  0% {
+    background-position: 0 0
+  }
+
+  100% {
+    background-position: -1680px 0
+  }
+}

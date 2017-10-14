@@ -1,0 +1,366 @@
+/*藏宝阁开始*/
+.b {
+  height: 380px;
+  margin-top: 20px;
+}
+
+.bleft {
+  width: 190px;
+  height: 380px;
+  margin-right: 20px;
+  background: #08bad7;
+}
+
+.w .bleft li {
+  height: 47px;
+  text-align: center;
+  color: #08bad7;
+  padding-top: 16px;
+}
+
+.w .bleft li:hover {
+  color: red;
+  background-color: #00a5c0;
+}
+
+.bleft li a {
+  font-size: 14px;
+  color: #fff;
+  width: 190px;
+  height: 60px;
+  display: inline-block;
+}
+
+.bleft .bul {
+  position: relative;
+}
+
+.bleft li #con0 {
+  width: 46px;
+  height: 43px;
+  background: url("../img/index_z_92e9295.png") no-repeat -45px -288px;
+  position: absolute;
+  top: 8px;
+  left: 20px;
+}
+
+.bleft li #con1 {
+  width: 73px;
+  height: 50px;
+  background: url("../img/index_z_92e9295.png") no-repeat -262px -140px;
+  position: absolute;
+  top: 6px;
+  left: 72px;
+}
+
+.bleft li #con2 {
+  width: 33px;
+  height: 40px;
+  background: url("../img/index_z_92e9295.png") no-repeat -96px -323px;
+  position: absolute;
+  top: 69px;
+  left: 28px;
+}
+
+.bleft li #con3 {
+  width: 27px;
+  height: 35px;
+  background: url("../img/index_z_92e9295.png") no-repeat -92px -288px;
+  position: absolute;
+  top: 141px;
+  left: 31px;
+}
+
+.bleft li #con4 {
+  width: 30px;
+  height: 35px;
+  background: url("../img/index_z_92e9295.png") no-repeat -204px -288px;
+  position: absolute;
+  top: 262px;
+  left: 28px;
+}
+
+.bleft li #con5 {
+  width: 33px;
+  height: 36px;
+  background: url("../img/index_z_92e9295.png") no-repeat -187px -194px;
+  position: absolute;
+  top: 318px;
+  left: 28px;
+}
+
+.bleft li #con6 {
+  width: 30px;
+  height: 35px;
+  background: url("../img/index_z_92e9295.png") no-repeat -65px -327px;
+  position: absolute;
+  top: 193px;
+  left: 28px;
+}
+
+.bcenter {
+  width: 460px;
+  height: 380px;
+  background: #fefefe;
+  margin-right: 20px;
+}
+
+.bctop {
+  height: 30px;
+  padding: 20px;
+  position: relative;
+}
+
+.bctopl {
+  font-size: 22px;
+}
+
+.bctopr {
+  font-size: 14px;
+  position: relative;
+}
+
+.bctopr .con6 {
+  width: 58px;
+  height: 26px;
+  background: url("../img/index_z_92e9295.png") no-repeat -299px -203px;
+  position: absolute;
+  top: 1px;
+  left: -74px;
+}
+
+.bctopr .con7 {
+  width: 33px;
+  height: 24px;
+  background: #f5414c;
+  position: absolute;
+  top: 97px;
+  left: -332px;
+  text-align: center;
+  color: #fff;
+  padding-top: 2px;
+}
+
+.bcenter .bctop #bxian1 {
+  border-bottom: 1px solid #dadada;
+  width: 410px;
+  position: absolute;
+  top: 68px;
+}
+
+.bcenter .bctop #bxian2 {
+  border-bottom: 3px solid #f6424d;
+  width: 90px;
+  position: absolute;
+  top: 68px;
+}
+
+.bcbody {
+  height: 330px;
+}
+
+.hd .current {
+  color: #f24854;
+}
+
+.hd {
+  width: 460px;
+  height: 45px;
+}
+
+.hd span {
+  display: inline-block; /*将行内元素转换成行内块元素，宽高才起作用*/
+  margin-left: 13px;
+  margin-right: 13px;
+  background-color: #fefefe;
+  line-height: 45px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.hd span.current {
+  background-color: #fefefe;
+}
+
+.bd li {
+  height: 255px;
+  background-color: #fefefe;
+  display: none; /*设置隐藏*/
+}
+
+.bd li i {
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 100px;
+  border-bottom: 1px dashed #dadada;
+  padding-bottom: 10px;
+}
+
+.bcbody .bd .current {
+  position: relative;
+}
+
+.bcbody .bd .current {
+  display: inline-block;
+  width: 58px;
+  height: 26px;
+}
+
+.bd li p {
+  margin-top: 10px;
+  border-bottom: 1px dashed #dadada;
+  width: 340px;
+  margin-left: 50px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.bd li p a {
+  font-size: 14px;
+  color: #3c3c3c;
+}
+
+.bd li p a:hover {
+  color: #f24854;
+}
+
+.bcbody .bd li {
+  height: 255px;
+  display: none; /*设置隐藏*/
+  color: #3c3c3c;
+}
+
+.bd li.current {
+  display: block; /*显示*/
+}
+
+.bright {
+  width: 480px;
+  height: 380px;
+}
+
+.bright h3:hover {
+  color: #f24854;
+}
+
+.bright .brleft a:hover {
+  color: #f24854;
+}
+
+.brleft {
+  width: 230px;
+  height: 380px;
+  margin-right: 20px;
+  background: #fff;
+}
+
+.brright {
+  width: 230px;
+  height: 380px;
+  background: #fff;
+}
+
+.bright .brleft {
+  background: url("../img/白云.jpg") no-repeat 0px 0px;
+  position: relative;
+}
+
+.bright .brleft span {
+  font-size: 22px;
+  position: absolute;
+  top: 27px;
+  left: 25px;
+}
+
+.bright .brleft h3 {
+  font-size: 16px;
+  position: absolute;
+  font-weight: 600;
+  top: 80px;
+  left: 25px;
+}
+
+.bright .brleft a {
+  font-size: 14px;
+  position: absolute;
+  top: 100px;
+  left: 25px;
+  color: #3c3c5a;
+}
+
+.bright .brleft div h3 {
+  font-size: 16px;
+  font-weight: 600;
+  position: absolute;
+  top: 146px;
+  left: 25px;
+}
+
+.bright .brleft div a {
+  font-size: 14px;
+  position: absolute;
+  top: 170px;
+  left: 25px;
+  color: #3c3c5a;
+}
+
+.bright .brleft .di {
+  width: 230px;
+  height: 80px;
+  background: #3b8bed;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.bright .brleft p {
+  color: #fff;
+  font-size: 18px;
+  position: absolute;
+  bottom: 27px;
+  left: 24px;
+}
+
+.bright .brleft i {
+  color: #fff;
+  font-size: 18px;
+  position: absolute;
+  bottom: 27px;
+  left: 118px;
+}
+
+.bright .brright {
+  width: 230px;
+  height: 380px;
+  position: relative;
+}
+
+.bright .brright .di2 {
+  width: 230px;
+  height: 80px;
+  background: #00a5c0;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.bright .brright .di2 li {
+  float: left;
+  font-size: 18px;
+  color: #fff;
+  height: 80px;
+  line-height: 80px;
+  padding: 0 20px;
+  cursor: pointer;
+}
+.bright .brright .di2 li:nth-child(2){
+  padding: 0;
+}
+.bright .brright .di2 li a{
+  color: #fff;
+}
+.bright .brright .di2 li:hover{
+  background-color: #0197b0;
+}
+/*藏宝阁结束*/

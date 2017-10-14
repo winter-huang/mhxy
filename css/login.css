@@ -1,0 +1,130 @@
+.login {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  float: left;
+  z-index: 10;
+  background: url("../img/bg_login.jpg") no-repeat -260px 0;
+  display: none;
+}
+
+.login .l-close {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, .2);
+  color: #fff;
+  position: absolute;
+  border-radius: 50px;
+  top: 100px;
+  right: 100px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.login .loginBox {
+  padding: 20px;
+  width: 380px;
+  height: 350px;
+  margin: 300px 320px;
+  position: relative;
+}
+
+.login .loginBox .fast,
+.login .loginBox .doewnLoan,
+.login .loginBox input,
+.login .loginBox .agree {
+  position: absolute;
+  left: 40px;
+}
+
+.login .loginBox .fast {
+  font-size: 22px;
+  top: -55px;
+  color: #f24854;
+}
+
+.login .loginBox .doewnLoan {
+  color: #ffffff;
+  background-color: #ff7366;
+  width: 100px;
+  padding: 5px 10px;
+  top: -55px;
+  left: 200px;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login .loginBox .doewnLoan:hover {
+  background-color: #ff8471;
+}
+
+.login .loginBox input {
+  padding: 0 20px;
+  width: 220px;
+  height: 42px;
+  color: #666;
+  font-size: 14px;
+  font-family: '微软雅黑';
+}
+
+.login .loginBox .idName {
+  top: 0;
+}
+
+.login .loginBox .passWord {
+  top: 60px;
+}
+
+.login .loginBox .submit {
+  width: 260px;
+  top: 120px;
+  color: #fff;
+  background-color: #ff7366;
+  cursor: pointer;
+}
+
+.login .loginBox .submit:hover {
+  background: #ff8471;
+}
+
+.login .loginBox .agree {
+  font-size: 12px;
+  width: 260px;
+  color: #666;
+  top: 180px;
+}
+
+.login .loginBox .agree a:hover {
+  color: #000;
+}
+
+.wrong {
+  color: red
+}
+
+.right {
+  color: green;
+}
+
+.idName-1, .passWord-1 {
+  position: absolute;
+  left: 310px;
+  font-size: 14px;
+}
+
+.idName-1 {
+  top: 10px;
+}
+
+.passWord-1 {
+  top: 70px;
+}
+
+
+
+
+

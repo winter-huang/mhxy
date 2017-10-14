@@ -1,0 +1,432 @@
+
+/* @Author: lenovo
+* @Date:   2017-08-12 09:10:44
+* @Last Modified by:   lenovo
+* @Last Modified time: 2017-08-15 15:07:23
+*/
+/*   <!-- 群雄逐鹿顶部开始 --> */
+
+
+  .bnav{
+  	height: 122px;
+  }
+  .bnavtop {
+      background: url(../img/nav_d39a983.png)no-repeat center top;
+    height: 122px;
+    width: 1360px;
+      max-width: 1920px;
+      min-width: 1360px;
+    margin: 0 auto;
+}
+.bnav .Logo {
+    display: block;
+    background: url(../img/nav_d39a983.png)no-repeat 300px 0;
+    margin-left: 54px;
+    width: 200px;
+    height: 120px;
+    float: left;
+    text-indent: -9999px;
+}
+.bnav a {
+	display: block;
+    height: 120px;
+    width: 260px;
+    /* width: 300px;
+    height: 120px; */
+}
+.bnav ul {
+    float: left;
+    width: 1082px;
+    padding-left: 19px;
+}
+.bnav ul li{
+    position:relative;
+
+}
+.bnav ul li,.bnav ul a{
+    width: 260px;
+    height: 120px;
+    display: block;
+    float: left;
+    cursor: pointer;
+}
+.bnav ul li span{
+    width:300px;
+    height: 120px;
+    position: absolute;
+}
+ ul .li1 a:hover span{
+	background: url(../img/nav_d39a983.png);
+    background-position: 1px -130px;
+    left:24px;
+}
+
+ul .li2 span{
+	background: url(../img/nav_d39a983.png);
+    background-position: 1px -260px;
+    left:4px;
+}
+ul .li3 a:hover span{
+	background: url(../img/nav_d39a983.png);
+    background-position: 1px -390px;
+    left: 2px;
+    width: 306px;  /*改span的宽度*/
+}
+ul .li4 a:hover span{
+	background: url(../img/nav_d39a983.png);
+    background-position: 1px -520px;
+    left:5px;
+}
+
+
+/* <!-- 群雄逐鹿顶部结束 -->
+/*  <!-- 群雄逐鹿body开始 --> */
+.bbody{
+	height: 771px;
+}
+.bbody-bg1{
+	height: 387px;
+	background: url(../img/群雄逐鹿.jpg)no-repeat center 0;
+}
+.bbody-bg2{
+	height: 384px;
+	background: url(../img/群下.jpg)no-repeat center 0;
+}
+.zong{
+    position: absolute;
+    top: 626px;
+    left: 310px;
+    height: 32px;
+    width: 949px;
+}
+.zong .step{
+    float: left;
+    width: 145px;
+    height: 32px;
+    position: relative;
+}
+.zong .step span {
+    text-align: left;
+    font-size: 18px;
+    color: #2adad4;
+    font-weight: 700;
+    width: 145px;
+}
+.zong .s3 {
+	position: absolute;
+    top: 46px;
+    left: 139px;
+}    
+.zong .s4 {
+	position: absolute;
+    top: 148px;
+    left: 139px;
+}  
+.zong .s1 {
+	position: absolute;
+    top: 76px;
+}
+.zong .s2 {
+	position: absolute;
+    bottom: -172px;
+}
+.zong ul {
+    float: left;
+    width: 836px;
+    height: 32px;
+}
+.zong ul li {
+    float: left;
+    width: 217px;
+    height: 32px;
+    position: relative;
+}
+.zong ul li a {
+    width: 123px;
+    height: 32px;
+    display: block;
+    text-align: center;
+    line-height: 32px;
+    background: url(../img/btns_5f38ffa.png) no-repeat;
+    font-size: 18px;
+    color: #1a59bb;
+    position: absolute;
+    top: 90px;
+    left: 138px;
+}
+.zong ul li a:hover{
+	background:pink;
+}
+.zong ul li span {
+    color: #fcd938;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+/*   <!-- 群雄逐鹿body结束 --> */
+
+/*  <!--历届夺冠队伍开始部分 --> */
+.winner{
+	height: 932px;
+	background: url(../img/历届夺冠队伍.jpg)center 0;
+}
+.wrap{
+	height: 932px;
+}
+.wrap1 ul{
+	position: relative;
+	height: 545px;
+	width:100%;
+}
+.wrap1 li{
+	position: absolute;
+	left: 577px;
+	top: 271px;
+}
+.arrow{
+	position: relative;
+}
+.prev{
+    width:76px;
+    height:112px;
+    position: absolute;
+	left: 35px;
+	top: -300px;
+    background: url(../img/prev.png) no-repeat;
+    z-index: 99;
+}
+.next{
+	width:76px;
+    height:112px;
+   position: absolute;
+	right: 25px;
+	top: -300px;
+    background-image: url(../img/next.png);
+     z-index: 99;
+}
+#slide{
+    margin-top: 70px;
+    height: 206px;
+    overflow: auto;
+    width: 1200px;
+}
+#slide #ul{
+    margin-top: 100px;
+    margin-left: 140px;
+    height: 130px;
+}
+#slide .ul2{
+    margin-top: 10px;
+    margin-left: 163px;
+    height: 30px;
+}
+#slide #ul li{
+    width: 133px;
+    height: 100px;
+    float: left;
+    margin-left: -10px;
+    position: relative;
+}
+
+#slide #ul li img{
+    position: relative;
+}
+
+#slide .ul2 li{
+    width: 124px;
+    height: 100px;
+    float: left;
+}
+#slide .ul2 li span{
+   color: #1973cd;
+   font-size: 14px;
+}
+
+
+/*   <!--历届夺冠队伍结束部分 --> */
+
+
+ /* <!-- 奖励介绍部分开始 --> */
+.award{
+  	width: 1430px;
+  	height: 934px;
+  	display: inline-block;
+  	background: url(../img/赛事介绍.jpg)center 0;
+ }
+ .box {
+            width: 730px;
+            height: 454px;
+            padding: 8px;
+           /*  border: 1px solid green; */
+            margin: 300px auto;
+        }
+.inner {
+            position: relative;
+            overflow: hidden;
+            height: 454px;
+        }
+#imglist {
+            width: 700%;
+            position: absolute;
+            left: 0;
+        }
+#imglist li {
+        	width: 730px;
+            height: 454px;
+            float: left;
+            padding-right: 60px;
+        }
+.list {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            margin-left: -85px;
+        }
+.list i {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #fff;
+            color: #333;
+            float: left;
+            font-style: normal;
+            line-height: 20px;
+            font-size: 14px;
+            text-align: center;
+            margin-right: 10px;
+            cursor: pointer;
+}
+.list i:last-child {
+            margin-right: 0;
+}
+ .list i.current {
+    background-color: skyblue;
+       color: #fff;
+}
+ 
+
+
+ 
+    /* <!-- 奖励介绍部分结束 --> */
+
+/*如来佛的脚底开始*/
+
+.bfooter{
+    height: 112px;
+    padding-top: 58px;
+    background: #272727;
+    position: relative;
+}
+.bfooter .img{
+    margin-left: 13px;
+}
+.bfooter .bfooter-left{
+    margin-left: 166px;
+    width: 400px;
+}
+.bfooter .bfooter-right{
+     width: 600px;
+}
+.bfooter .bfooter-right li{
+    float: left;
+}
+.bfooter .bfooter-right li a{
+    font-size: 12px;
+    color:  #e23a3f;
+    font-family:SimSun;
+}
+.bfooter .bdibu a{
+    margin-bottom: 20px;
+    font-size: 12px;
+    color:  #e23a3f;
+    font-family:SimSun;
+}
+.bfooter .jianhu{
+    height: 30px;
+    width: 30px;
+}
+
+
+.jianhu{
+    top: 108px;
+    left: 114px;
+    position: absolute;
+    height: 350px;
+    width: 128px;
+    z-index: 999;
+    /* background: red; */
+}
+.jianhu ul li {
+    width: 128px;
+    height: 123px;
+    display: block;
+    position: relative;
+    overflow: visible;
+}
+.jianhu ul li a{
+  position: absolute;
+  top: 38px;
+  left: 23px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  z-index: 99999;
+}
+.jianhu ul li a:hover{
+    color: red;
+}
+.jianhu ul li a p{
+  font-size: 12px;
+}
+.jianhu ul #li1{
+    background: url(../img/sub_nav_d5178aa.png)no-repeat;
+    position: relative;
+    left: 0;
+    top: 6px;
+}
+.jianhu ul #li4{
+    background: url(../img/sub_nav_d5178aa.png)no-repeat -128px 0px;
+    position: absolute;
+    left: 0;
+    top: 6px;
+}
+.jianhu ul #li2{
+    background:url(../img/sub_nav_d5178aa.png)no-repeat;    position: relative;
+    left: 0;
+    top: 6px;
+}
+.jianhu ul #li3{
+    background:url(../img/sub_nav_d5178aa.png)no-repeat;    position: relative;
+        left: 0;
+    top: 6px;
+}
+
+
+
+
+
+
+
+/*如来佛的脚底结束*/
+
+
+
+
+
+
+
+ 

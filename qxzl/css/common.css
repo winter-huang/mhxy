@@ -1,0 +1,108 @@
+.w{
+    width: 1170px;
+    margin: 0 auto;
+}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, button, input, textarea {
+    margin: 0;
+    padding: 0
+}
+
+fieldset, img {
+    border: 0
+}
+body{
+    background-color: #f6f7fb;
+}
+:focus {
+    outline: 0
+}
+.fl{
+    float: left;
+}
+.fr{
+    float:right;
+}
+
+h1, h2, h3, h4, h5, h6, code {
+    font-size: 100%
+}
+
+input, button, textarea, select, optgroup, option {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit
+}
+
+body {
+    line-height: 1.5
+}
+
+ol, ul {
+    list-style: none
+}
+
+textarea {
+    overflow: auto;
+    resize: none
+}
+
+a, button {
+    cursor: pointer
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+caption, th {
+    text-align: left
+}
+
+sup, sub {
+    font-size: 100%;
+    vertical-align: baseline
+}
+
+:link, :visited, ins {
+    text-decoration: none
+}
+
+del {
+    text-decoration: line-through
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+body {
+    font-family: "Microsoft YaHei", simSun, "Lucida Grande", "Lucida Sans Unicode", Arial;
+    font-size: 12px;
+    min-width: 1260px
+}
+
+.clearfix {
+    zoom: 1
+}
+
+.clearfix:after {
+    clear: both;
+    content: '\0020';
+    display: block;
+    visibility: hidden;
+    height: 0
+}
+
+.hide {
+    display: none
+}
+
+em, i {
+    font-style: normal
+}
+
+a:hover {
+    text-decoration: none
+}

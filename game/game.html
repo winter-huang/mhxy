@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>网易</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/demo.css">
+  <link rel="stylesheet" href="css/wy-index.css">
+  <script src="js/jquery-1.12.2.min.js"></script>
+  <script src="js/wy-index.js"></script>
+  <script src="js/animate.js"></script>
+  <style>
+    .head-bg {
+      position: absolute;
+      width: 100%;
+      padding-top: 100px;
+      height: 850px;
+      top: 0;
+      left: 0;
+      background-position: center top;
+      background-repeat: no-repeat;
+      display: block;
+      z-index: 1;
+    }
+
+    .bg {
+      position: absolute;
+      width: 100%;
+      height: 950px;
+      overflow: hidden;
+    }
+
+    /*左右切换图标*/
+
+    .head-sel {
+      position: absolute;
+      top: 50%;
+      background: #cf0f32;
+      width: 45px;
+      height: 80px;
+      z-index: 5;
+      display: none;
+    }
+
+    .head-prev i {
+      background: url(wangyi-img/left.png) no-repeat;
+    }
+
+    .head-next i {
+      background: url(wangyi-img/right.png) no-repeat;
+    }
+
+    .head-prev {
+      left: 0;
+    }
+
+    .head-next {
+      right: 0;
+    }
+
+    .head-sel i {
+      position: absolute;
+      width: 8px;
+      height: 13px;
+      left: 50%;
+      top: 50%;
+      margin-left: -4px;
+      margin-top: -7px;
+    }
+
+    .bg:hover .head-sel {
+      display: block;
+    }
+
+    .head-ctrl {
+      position: relative;
+      width: 200px;
+      float: right;
+      height: 40px;
+      text-align: right;
+    }
+
+    .head-ctrl-box {
+      position: absolute;
+      width: 1260px;
+      height: 0;
+      left: 50%;
+      margin-left: -630px;
+      bottom: 390px;
+      z-index: 3;
+    }
+
+    .head-ctrl a {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin: 0 5px;
+      background-repeat: no-repeat;
+      background-position: -37px 0px;
+    }
+
+    .head-ctrl a:hover, .head-ctrl a.cur {
+      background-position: 0px -37px;
+    }
+
+    .head-ctrl a:hover, .head-ctrl a.cur {
+      background-repeat: no-repeat;
+    }
+
+    .head-ctrl a {
+      background-size: 67px 57px;
+      background-image: url(wangyi-img/index_1_z_b307af4.png);
+    }
+  </style>
+
+
+  <script>
+    $(function () {
+      $('.body1 li a').hover(function () {
+        $(this).children('i').stop().animate({width: 22});
+      });
+      $('.body1 li a').mouseout(function () {
+        $(this).children('i').stop().animate({width: 0});
+      });
+
+      //            热图切换：
+      var ul = $('.body2 .hot-phto .hotGrup');
+      var next = $('.body2 .content-left h3>a');
+      var index = 0;
+      next[0].onclick = function () {
+        if (index < ul.length) {
+          index++;
+          for (i = 0; i < ul.length; i++) {
+            animatev5(ul[i], {opacity: 0});
+            ul[i].style.zIndex = 10;
+          }
+          if (index >= ul.length) {
+            index = 0;
+          }
+          animatev5(ul[index], {opacity: .8});
+          ul[index].style.zIndex = 15;
+
+        }
+      }
+
+    });
+  </script>
+
+
+</head>
+<body>
+<!--头部-->
+<div class="header">
+  <div class="top">
+    <div class="nav C clearfix">
+      <h1 class="fl"><a href="">
+        <img src="wangyi-img/logo1_1c91104.png" alt="">
+        网易游戏</a></h1>
+      <ul class="clearfix fl">
+        <li><a href="">奇遇俱乐部</a></li>
+        <li><a href="">关于网易游戏</a></li>
+        <li><a href="">爱玩网</a></li>
+        <li><a href="">游戏热爱者</a></li>
+        <li><a href="">网易游戏APP</a></li>
+        <li><a href="">人才招聘</a></li>
+        <li><a href="">克服中心</a></li>
+
+      </ul>
+      <a href="">
+        <span></span>
+        <p>游戏列表</p>
+      </a>
+
+    </div>
+  </div>
+  <div class="bg" id="bg-bannar">
+
+    <div class="head-bg"
+         style="background-image:url(wangyi-img/top-bg1.png);opacity: 100;filter: alpha(opacity=1);"></div>
+    <div class="head-bg" style="background-image:url(wangyi-img/top-bg2.png);"></div>
+    <div class="head-bg" style="background-image:url(wangyi-img/top-bg3.png);"></div>
+    <div class="head-bg" style="background-image:url(wangyi-img/top-bg4.png);"></div>
+    <div class="head-bg" style="background-image:url(wangyi-img/top-bg5.png);"></div>
+    <div class="head-ctrl-box">
+      <p class="head-ctrl">
+        <a href="javascript:;" class="cur"></a>
+        <a href="javascript:;" class=""></a>
+        <a href="javascript:;" class=""></a>
+        <a href="javascript:;" class=""></a>
+        <a href="javascript:;" class=""></a>
+      </p>
+    </div>
+    <a href="javascript:;" class="head-prev head-sel">
+      <i></i>
+    </a>
+    <a href="javascript:;" class="head-next head-sel">
+      <i></i>
+    </a>
+
+  </div>
+  <div class="content">
+    <div class="clearfix C">
+      <div class="left fl clearfix">
+        <div class="content-nav fl">
+          <ul>
+            <li class="li1">
+              <a href="">
+                <span class="v-line"></span>
+                <img src="wangyi-img/icon (1).png" alt="">
+                <span>《我的世界》不限号测试</span>
+                <i>PC Java版测试火热开启！</i>
+              </a>
+            </li>
+            <li class="li2">
+              <a href="">
+                <span class="v-line"></span>
+                <img src="wangyi-img/icon.png" alt="">
+                <span>《大话西游》手游</span>
+                <i>2017鎏金宝鉴限量首发</i>
+              </a>
+            </li>
+            <li class="li3">
+              <a href="">
+                <span class="v-line"></span>
+                <img src="wangyi-img/icon (2).png" alt="">
+                <span>新倩女幽魂今日公测</span>
+                <i>携影版三生三世送福利</i>
+              </a>
+            </li>
+            <li class="li4">
+              <a href="">
+                <span class="v-line"></span>
+                <img src="wangyi-img/icon (3).png" alt="">
+                <span>《大唐无双》唯美版</span>
+                <i>一起战 就是痛快！</i>
+              </a>
+            </li>
+            <li class="li5">
+              <a href="">
+                <span class="v-line"></span>
+                <img src="wangyi-img/icon.png" alt="">
+                <span>2017鎏金宝鉴限量首发</span>
+                <i>酷炫飞升龙马 8月10日震撼登场</i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="content-a fr">
+          <a href=""><img src="wangyi-img/438645a1-6c64-464a-a73f-0f6dbb6ae122.png" alt=""></a>
+        </div>
+      </div>
+      <div class="right fl">
+        <h3><a href="">填生存类新游问卷，抽5000京东卡</a></h3>
+        <ul>
+          <li class="">
+            <a href="">网易二季度营收133.8亿同比增49% 净利润29.7亿</a>
+            <span>08-10</span></li>
+          <li class="">
+            <a href="">《我的世界》中国版今日开放PC Java版不限号测试</a>
+            <span>08-08</span></li>
+          <li class="">
+            <a href="">新倩女幽魂携影版三生三世 送同款时装电影票</a>
+            <span> 08-04</span></li>
+          <li class="">
+            <a href="">震惊，神器现世！《梦幻西游》电脑版大型资料片盖世来袭</a>
+            <span>08-01</span></li>
+          <li class="">
+            <a href="">网易大作首度亮相CJ 高颜值新玩法引燃期待</a>
+            <span>08-01</span></li>
+          <li class="">
+            <a href="">[三石精选]选对背包，出行更简单</a>
+            <span>07-31</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!--中部-->
+<div class="body1">
+  <div class="">
+    <ul class="clearfix">
+      <li><a href=""><img src="wangyi-img/32f88219-e27b-4660-bf3d-71a2ea2b6629.png" alt=""><i class="ss1"></i></a></li>
+      <li><a href=""><img src="wangyi-img/73e91e3c-e1c8-4b2b-9bf5-eadb1ea55703 (1).png" alt=""><i class="ss2"></i></a>
+      </li>
+      <li><a href=""><img src="wangyi-img/808493ff-a57e-432d-b444-b3b31bffa746.png" alt=""><i class="ss3"></i></a></li>
+      <li><a href=""><img src="wangyi-img/28e1d0bf-b1fa-4097-b676-2477b667ae4d.png" alt=""><i class="ss4"></i></a></li>
+
+    </ul>
+  </div>
+
+</div>
+<div class="body2">
+  <div class="clearfix">
+    <div class="content-left fl">
+      <h3>热门游戏
+        <a href="javascript:">换一批
+          <i></i>
+        </a>
+      </h3>
+      <div class="hot-phto">
+        <div class="hot1">
+          <ul class="gr1 hotGrup">
+            <li>
+              <a href="javascript:" class="photo">
+                <img src="wangyi-img/hot-photo1.png" alt="">
+                <div class="hot-zzc" style="background-image:url(wangyi-img/hot-photo1-bg.png)"></div>
+              </a>
+              <p class="hot-title">《大话西游》手游</p>
+              <p class="hot-text">年度巨作，8月10日震撼登场！霸气酷炫的飞升龙马，角色专属华丽翅膀，限量典藏</p>
+              <span class="hot-line"></span>
+              <a class="hot-link" href="javascript:">进入官网</a>
+            </li>
+            <li>
+              <a href="javascript:" class="photo"><img src="wangyi-img/hot-photo2.png" alt="">
+                <div class="hot-zzc" style="background-image:url(wangyi-img/hot-photo2-bg.png)"></div>
+              </a>
+              <p class="hot-title">MuMu模拟器</p>
+              <p class="hot-text">MuMu模拟器能让你在电脑上运行手游和各类安卓应用，模拟器资源消耗少、运行</p>
+              <span class="hot-line"></span>
+              <a class="hot-link" href="javascript:">进入官网</a>
+            </li>
+            <li>
+              <a href="javascript:" class="photo"><img src="wangyi-img/hot-photo3.png" alt="">
+                <div class="hot-zzc" style="background-image:url(wangyi-img/hot-photo3-bg.png)"></div>
+              </a>
+              <p class="hot-title">《我的世界》</p>
+              <p class="hot-text">《我的世界》PC Java版不限号测试8月8日火热开启，快和小伙伴一起自由冒险吧！</p>
+              </p>
+              <span class="hot-line"></span>
+              <a class="hot-link" href="javascript:">进入官网</a>
+            </li>
+            <li>
+              <a href="javascript:" class="photo"><img src="wangyi-img/hot-photo4.png" alt="">
+                <div class="hot-zzc" style="background-image:url(wangyi-img/hot-photo4-bg.png)"></div>
+              </a>
+              <p class="hot-title">《新倩女幽魂》</p>
+              <p class="hot-text">电影《三生三世十里桃花》品牌合作网游《新倩女幽魂》送电影票+同款时装！</p>
+              <span class="hot-line"></span>
+              <a class="hot-link" href="javascript:">进入官网</a>
+            </li>
+            <li>
+              <a href="javascript:" class="photo"><img src="wangyi-img/hot-photo5.png" alt="">
+                <div class="hot-zzc" style="background-image:url(wangyi-img/hot-photo-5bg.png)"></div>
+              </a>
+              <p class="hot-title">《秘宝猎人》</p>
+              <p class="hot-text">燃情试炼！这个夏天，《秘宝猎人》陪你浪！</p>
+              <span class="hot-line"></span>
+              <a class="hot-link" href="javascript:">进入官网</a>
+            </li>
+            <li>
+              <a href="javascript:" class="photo"><img src="wangyi-img/hot-photo6.png" alt="">
+                <div class="hot-zzc" style="background-image:url(wangyi-img/hot-photo6-bg.png)"></div>
+              </a>
+              <p class="hot-title">《大话西游》手游</p>
+              <p class="hot-text">年度巨作，8月10日震撼登场！霸气酷炫的飞升龙马，角色专属华丽翅膀，限量典藏</p>
+              <span class="hot-line"></span>
+              <a class="hot-link" href="javascript:">进入官网</a>
+            </li>
+
+          </ul>
+          <ul class="gr2 hotGrup">
+            <li>
+              <a href="" class="photo"><img src="wangyi-img/hot-photo7.png" alt="">
+                <div class="hot-zzc" style="background-image:url(wangyi-img/hot-photo7-bg.png)"></div>
+              </a>
+              <p class="hot-title">《狩猎纪元》</p>
+              <p class="hot-text">网易首款巨兽共斗3D动作手游《狩猎纪元》觉醒内测来袭！联机猎杀，恶龙初</p>
+              <span class="hot-line"></span>
+              <a class="hot-link" href="">进入官网</a>
+            </li>
+            <li>
+              <a href="" class="photo"><img src="wangyi-img/hot-photo8.png" alt="">
+                <div class="hot-zzc" style="background-image:url(wangyi-img/hot-photo8-bg.png)"></div>
+              </a>
+              <p class="hot-title">《秘境对决》</p>
+              <p class="hot-text">一群对战卡牌热爱者的诚挚匠心之作，只为发扬桌游对战卡牌的纯粹魅力。</p>
+              <span class="hot-line"></span>
+              <a class="hot-link" href="">进入官网</a>
+            </li>
+            <li>
+              <a href="" class="photo"><img src="wangyi-img/hot-photo9.png" alt="">
+                <div class="hot-zzc" style="background-image:url(wangyi-img/hot-photo9-bg.png)"></div>
+              </a>
+              <p class="hot-title">《神都夜行录》</p>
+              <p class="hot-text">世间妖怪，皆有温度。网易首款正统国风降妖手游《神都夜行录》，今日震撼开启</p>
+              <span class="hot-line"></span>
+              <a class="hot-link" href="">进入官网</a>
+            </li>
+            <li>
+              <a href="" class="photo"><img src="wangyi-img/hot-photo10.png" alt="">
+                <div class="hot-zzc" style="background-image:url(wangyi-img/hot-photo10-bg.png)"></div>
+              </a>
+              <p class="hot-title">《大航海之路》</p>
+              <p class="hot-text">印度这片神秘而让人精神愉悦的领地，将展现在所有航海家眼前。</p>
+              <span class="hot-line"></span>
+              <a class="hot-link" href="">进入官网</a>
+            </li>
+            <li>
+              <a href="" class="photo"><img src="wangyi-img/hot-photo11.png" alt="">
+                <div class="hot-zzc" style="background-image:url(wangyi-img/hot-photo11-bg.png)"></div>
+              </a>
+              <p class="hot-title">《倩女幽魂》手游</p>
+              <p class="hot-text">《倩女幽魂》手游隆重推出电影《三生三世十里桃花》主角同款时装，新手登录免</p>
+              <span class="hot-line"></span>
+              <a class="hot-link" href="">进入官网</a>
+            </li>
+            <li>
+              <a href="" class="photo"><img src="wangyi-img/hot-photo12.png" alt="">
+                <div class="hot-zzc" style="background-image:url(wangyi-img/hot-photo12-bg.png)"></div>
+              </a>
+              <p class="hot-title">猎魂觉醒</p>
+              <p class="hot-text">超真实3D团队狩猎手游《猎魂觉醒》今日开启预约</p>
+              <span class="hot-line"></span>
+              <a class="hot-link" href="">进入官网</a>
+            </li>
+
+          </ul>
+          <ul class="gr3 hotGrup">
+            <li>
+              <a href="" class="photo"><img src="wangyi-img/hot-photo13.png" alt="">
+                <div class="hot-zzc" style="background-image:url(wangyi-img/hot-photo13-bg.png)"></div>
+              </a>
+              <p class="hot-title">全新大话2口袋版</p>手机上也能玩大话2了，全平台公测震撼开启！满分经典，指尖还原！</p>
+              <span class="hot-line"></span>
+              <a class="hot-link" href="">进入官网</a>
+            </li>
+            <li>
+              <a href="" class="photo"><img src="wangyi-img/hot-photo14.png" alt="">
+                <div class="hot-zzc" style="background-image:url(wangyi-img/hot-photo14-bg.png)"></div>
+              </a>
+              <p class="hot-title">《梦幻西游》手游</p>
+              <p class="hot-text">欢聚梦幻，畅爽一夏！《梦幻西游》手游全新暑期活动酷果乐园踏浪来袭！</p>
+              <span class="hot-line"></span>
+              <a class="hot-link" href="">进入官网</a>
+            </li>
+            <li>
+              <a href="" class="photo"><img src="wangyi-img/hot-photo15.png" alt="">
+                <div class="hot-zzc" style="background-image:url(wangyi-img/hot-photo15-bg.png)"></div>
+              </a>
+              <p class="hot-title">《镇魔曲》手游</p>
+              <p class="hot-text">第三流派觉醒，半年庆全新战斗体验</p>
+              <span class="hot-line"></span>
+              <a class="hot-link" href="">进入官网</a>
+            </li>
+            <li>
+              <a href="" class="photo"><img src="wangyi-img/hot-photo16.png" alt="">
+                <div class="hot-zzc" style="background-image:url(wangyi-img/hot-photo16-bg.png)"></div>
+              </a>
+              <p class="hot-title">《飞刀又见飞刀》</p>
+              <p class="hot-text">《飞刀又见飞刀》今日全平台公测，带来与众不同的清新台味武侠体验。</p>
+              <span class="hot-line"></span>
+              <a class="hot-link" href="">进入官网</a>
+            </li>
+            <li>
+              <a href="" class="photo"><img src="wangyi-img/hot-photo17.png" alt="">
+                <div class="hot-zzc" style="background-image:url(wangyi-img/hot-photo17-bg.png)"></div>
+              </a>
+              <p class="hot-title">《光明大陆》手游</p>
+              <p class="hot-text">全新3D魔幻MMO，光明大陆2.0版本荣耀来袭，跨服天梯排位赛上演巅峰对决，再一次改变世界！</p>
+              <span class="hot-line"></span>
+              <a class="hot-link" href="">进入官网</a>
+            </li>
+            <li>
+              <a href="" class="photo"><img src="wangyi-img/hot-photo18.png" alt="">
+                <div class="hot-zzc" style="background-image:url(wangyi-img/hot-photo18-bg.png)"></div>
+              </a>
+              <p class="hot-title">《楚留香》</p>
+              <p class="hot-text">高自由度武侠手游，开启精英秘测！深入疑局，踏遍千山，感知八千里江湖百态。</p>
+              <span class="hot-line"></span>
+              <a class="hot-link" href="">进入官网</a>
+            </li>
+
+          </ul>
+
+
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="content-right fr">
+      <p class="g-new">新游测试</p>
+      <ul class="game-list">
+        <li>
+          <a href="" class="f-cb">
+            <img src="wangyi-img/1fd6dead-18a9-4177-9ca1-cab3750eda20.png" alt="">
+            <p>
+              <em>荆棘王座</em>
+              <span class="game-dect">终极对决删档测试</span>
+              <span class="game-time">
+                                    <i></i>
+                                    6月29日11:00
+                                </span>
+              <i class="game-arrow"></i>
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="" class="f-cb">
+            <img src="wangyi-img/af9ce5cb-8738-442b-9828-ad1997afc5b4.png" alt="">
+            <p>
+              <em>龙魂时刻</em>
+              <span class="game-dect">不限号不删档测试</span>
+              <span class="game-time">
+                                    <i></i>
+                                    6月29日11:00
+                                </span>
+              <i class="game-arrow"></i>
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="" class="f-cb">
+            <img src="wangyi-img/5d4dc109-d27f-4e09-9da4-a30975fd86d3.png" alt="">
+            <p>
+              <em>勇士x勇士</em>
+              <span class="game-dect">全平台公测</span>
+              <span class="game-time">
+                                    <i></i>
+                                    6月29日11:00
+                                </span>
+              <i class="game-arrow"></i>
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="" class="f-cb">
+            <img src="wangyi-img/8b83791b-be57-4b02-8cb4-f6893bdd201d.png" alt="">
+            <p>
+              <em>小汪汪</em>
+              <span class="game-dect">官网测试</span>
+              <span class="game-time">
+                                    <i></i>
+                                    6月29日11:00
+                                </span>
+              <i class="game-arrow"></i>
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="" class="f-cb">
+            <img src="wangyi-img/54722ca4-00b2-467c-802c-b873572d50d2.png" alt="">
+            <p>
+              <em>《魂之轨迹》</em>
+              <span class="game-dect">计费删档测试</span>
+              <span class="game-time">
+                                    <i></i>
+                                    6月29日11:00
+                                </span>
+              <i class="game-arrow"></i>
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="" class="f-cb">
+            <img src="wangyi-img/8c174a49-9301-42d7-b851-dc93fb89ed13.png" alt="">
+            <p>
+              <em>《天骄铁骑》</em>
+              <span class="game-dect">计费删档测试</span>
+              <span class="game-time">
+                                    <i></i>
+                                    6月29日11:00
+                                </span>
+              <i class="game-arrow"></i>
+            </p>
+          </a>
+        </li>
+
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!--底部：-->
+<div class="footer" id="footer">
+  <!--如来佛祖的脚底：-->
+  <div class="footer-b w">
+    <div class="top clearfix">
+                <span class="left fl">
+                   <a href=""><img src="wangyi-img/netease.2.png" alt=""></a>
+                   <a href=""><img src="wangyi-img/nie.2.png" alt=""></a>
+                   <a href=""><img src="wangyi-img/wen.png" alt=""></a>
+                </span>
+      <span class="right fl">
+                    <ul class="clearfix">
+                        <li><a href="">公司简介</a></li>
+                        <li><a href="">客户服务</a></li>
+                        <li><a href="">相关法律</a></li>
+                        <li><a href="">网易游戏</a></li>
+                        <li><a href="">联系我们</a></li>
+                        <li><a href="">商务合作</a></li>
+                        <li><a href="">加入我们</a></li>
+                    </ul>
+                    <p class="clearfix">网易公司版权所有 ©1997-2017
+                        <a href="" class="fr">点击查看家长监护工程></a>
+                    </p>
+                </span>
+    </div>
+    <div class="bottom"></div>
+  </div>
+</div>
+
+
+</body>
+</html>

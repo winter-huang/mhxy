@@ -1,0 +1,515 @@
+
+
+
+.header{
+    height:950px;
+    width:100%;
+    position: relative;
+}
+.header .top{
+    width: 100%;
+    height:100px;
+    background-color:#fff;
+    position: absolute;
+	top: 0;
+    left: 0;
+	z-index: 9999;
+    min-width: 1260px;
+	opacity:.8;
+	
+}
+.header .nav{
+    height:100px;
+    width: 1260px;
+    margin-left:43px;
+    position: relative;
+	 margin: 0 auto;
+	 overflow: visible;
+
+}
+.header .nav>a{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    display:block;
+    width: 120px;
+    height: 120px;
+    background-color: #f00;
+
+
+}
+.nav>a span{
+    margin:22px auto;
+    display: block;
+    width: 34px;
+    height:34px;
+    background:url("../wangyi-img/topBar_1_z_e7632fe.png") no-repeat 0px 0px;
+}
+.nav>a p{
+    font-weight:500;
+    font-size:16px;
+    color:#fff;
+    margin:-18px 28px;
+
+}
+
+
+.header .nav h1{
+    text-indent:-999px;
+    overflow:hidden;
+}
+.header .nav h1 img{
+    width:177px;
+    height:58px;
+    position: absolute;
+    left:6px;
+    top: 15px;
+}
+.header .nav  ul{
+    position: absolute;
+    left: 286px;
+    top:40px ;
+}
+ .header .nav ul li{
+    float: left;
+    margin-left:30px;
+    text-align: center;
+
+}
+.header .nav ul a{
+    color: #333333;
+    font-size:16px;
+    font-weight: 600;
+    border:2px solid transparent;
+}
+ .header .nav ul a:hover{
+    animation: myfirst 5s infinite;
+    -webkit-animation: myfirst 1.5s; /* Safari 与 Chrome */
+}
+@-webkit-keyframes myfirst {
+from {color: red;  }
+to {color: yellow; }
+}
+
+/*top-nav 分割线*/
+/*以下是背景轮播图
+.header .bg{
+    width:1347px;
+    height:950px;
+}*/
+
+/*分割线*/
+
+
+.content{
+    width:100%;
+    height: 350px;
+    position: absolute;
+    left: 50%;
+	margin-left: -50%;
+    top: 600px;
+}
+
+.content>div{
+    width: 1260px;
+    margin: 0 auto;
+    height: 100%;
+    overflow: hidden;
+	z-index: 3;
+	position: relative;
+}
+
+.content .left{
+    width: 720px;
+    height: 350px;
+}
+.content .content-nav>ul{
+    width: 210px;
+    height: 350px;
+    background-color:rgba(0,0,0,.7);
+}
+.content .content-nav li{
+    color: #333333;
+    background-repeat:no-repeat;
+    background-position:0 0;
+}
+.content .content-nav li img{
+    width:40px;
+    height:40px;
+    position: absolute;
+    left: 15px;
+    top:15px;
+}
+.content .v-line{
+    display: none;
+    position: absolute;
+    top: 0;
+    left:-1px;
+    width: 5px;
+    height: 70px;
+    background-color:#ff0000;
+}
+.content .content-nav a:hover .v-line{
+    display: block;
+}
+
+.content .content-nav li>a{
+    display: block;
+    height:70px;
+    width:210px;
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+    left:0px;
+    top:0;
+}
+.content .content-nav a>span:nth-child(3),.content .content-nav a>i{
+    display: block;
+    width: 130px;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+
+}
+.content .content-nav a>span:nth-child(3){
+    position:absolute;
+    left:55px;
+    top:15px;
+}
+
+.content .content-nav a>i{
+    color: #948f8f;
+    position:absolute;
+    left:66px;
+    top:35px;
+}
+.content .content-nav li>a:hover {
+    background-color:#000;
+    opacity:.5;
+}
+
+/*分割线*/
+.content .left .content-a{
+    width: 510px;
+    height: 350px;
+}
+.content .left .content-a img{
+    width: 510px;
+    height: 350px;
+}
+
+/*分割线*/
+.content .right{
+    width: 460px;
+    height: 310px;
+    padding:40px 40px 0 40px;
+    background-color:#000000;
+    opacity:.8;
+}
+.content .right ul{
+    margin-top: 15px;
+}
+.content .right h3 a{
+    font-size: 26px;
+    font-weight:600;
+    color:#cf0f32;
+}
+.content .right h3{
+    padding-bottom: 20px;
+    border-bottom:1px solid #fff;
+
+}
+.content .right li{
+    height:30px;
+    position: relative;
+    line-height:30px;
+    width: 460px;
+
+}
+.content .right li a{
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /*width:395px;*/
+    color: #fff;
+    padding-left:15px;
+    background:url("../wangyi-img/n-icon_c141505.png") no-repeat 0 0;
+}
+.content .right li span{
+    position: absolute;
+    top: 0px;
+    right:0px;
+
+}
+
+/*分割线*/
+/*body1*/
+.body1{
+    width:100%;
+}
+
+.body1>div{
+    width:1260px;
+    height:210px;
+    margin:0 auto;
+    /*background-color: #3b8bed;*/
+}
+.body1 ul{
+    margin-right: -20px;
+    padding:40px 0;
+}
+.body1 li{
+    height:130px;
+    width:300px;
+    margin-right:20px ;
+    float: left;
+}
+.body1 li a{
+    position: relative;
+}
+.body1 li a>i{
+    display: block;
+    width:0px;
+    height: 2px;
+    background-color: #f00;
+    position: absolute;
+    left:36px;
+    top: -36px;
+}
+.body1 li a>.ss2{
+    background-color: #fff;
+
+}
+
+/*分割线*/
+/*body2*/
+.body2{
+    width:100%;
+    height:810px;
+}
+.body2>div{
+	position: relative;
+    width:1260px;
+     height: 100%;
+    margin: 0 auto;
+	overflow: hidden;
+    /*background-color: #bfd0e5;*/
+}
+
+.body2 .content-left{
+    width: 960px;
+    height:810px;
+}
+
+
+/*content-left热图*/
+.body2 .content-left h3{
+    width: 100%;
+    padding:0 20px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    color: #000;
+    border-left:4px solid #ff0000;
+    border-right:4px solid #ff0000;
+}
+.body2 .content-left h3>a{
+    display: block;
+    width:94px;
+    font-size:20px;
+    float: right;
+}
+.body2 .content-left h3>a:hover{
+    color:#000;
+}
+.body2  .gr1 {
+    z-index:10;
+}
+
+.body2 h3 a>i{
+    display: block;
+    float:right;
+    margin-top: 5px;
+    width: 20px;
+    height:16px;
+    background: url("../wangyi-img/index_1_z_b307af4.png") no-repeat -20px -38px;
+}
+/*hot-phto热图展开：*/
+.body2 .hot-phto li{
+    float: left;
+    width: 300px;
+    height: 318px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    position: relative;
+    background-color: #fff;
+}
+.body2 .hot-phto .photo {
+    position: relative;
+    display: block;
+    height:170px;
+    overflow: hidden;
+}
+.body2 .hot-phto .photo>img{
+    width: 300px;
+    height: 170px;
+}
+.body2 .hot-phto .photo .hot-zzc{
+    width: 400px;
+    height: 176px;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top:100%;
+}
+.body2 .photo:hover .hot-zzc{
+    opacity: 0.8;
+    top:0;
+
+}
+.body2 .hotGrup .hot-title{
+    font: 700 20px/32px "微软雅黑";
+    margin:13px 20px 2px ;
+    overflow: hidden;
+    height:32px;
+    color: #383838;
+}
+.body2 .hotGrup .hot-text{
+    margin: 0 16px 13px;
+    font: 14px "Microsoft YaHei";
+    color: #b1b1b1;
+    line-height: 22px;
+    padding: 0 2px;
+    height: 45px;
+    overflow: hidden;
+    position: relative;
+}
+.body2 .hotGrup .hot-line{
+    position: absolute;
+    bottom: 8px;
+    left: 9px;
+}
+.body2 .hotGrup .hot-link{
+    position: absolute;
+    bottom: 8px;
+    right: 20px;
+    width: 88px;
+    height: 30px;
+    display: block;
+    background: url(../wangyi-img/arrow_4f042d5.png) no-repeat right center;
+    font: 12px/30px "Micosoft YaHei";
+    text-align: center;
+    color: #9f9f9f;
+}
+.body2 .hotGrup .hot-link:hover{
+    color:#d8260a;
+    background: url(../wangyi-img/arrow_h_75b47d5.png) no-repeat right center;
+}
+.body2 .hotGrup{
+    position: absolute;
+    top:0;
+    left:0;
+}
+.body2 .hot1{
+    position: relative;
+}
+.body2 .gr1{
+    opacity:1;
+}
+.body2 .gr2,.body2 .gr3{
+    opacity:0;
+}
+
+/*新游戏测试板块*/
+.body2 .content-right{
+    width: 300px;
+    height:810px;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+.content-right .g-new{
+    position: relative;
+    line-height: 22px;
+    font-size: 22px;
+    color: #272a2c;
+    display: block;
+    text-indent: 15px;
+    border-left: 4px #cf1132 solid;
+    margin-bottom: 30px
+}
+.game-list{
+    border: solid 1px #ededed;
+    background: #fff;
+}
+.game-list li {
+    border-top: solid 1px #ededed;
+    position: relative;
+}
+.game-list a {
+    display: block;
+    padding: 20px 42px 0 26px;
+    height: 88px;
+}
+.game-list em{
+    display: block;
+    font-size: 16px;
+    color: #555;
+    line-height: 22px;
+    height: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-style: normal;
+
+}
+
+.game-list img {
+    float: left;
+    margin-right: 22px;
+    display: block;
+    height: 68px;
+    width: 68px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px rgba(66,63,105,.4);
+}
+
+.game-list span {
+    display: block;
+    font-size: 14px;
+    color: #999;
+    line-height: 24px;
+    height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.game-list .game-time {
+    font-size: 12px;
+}
+.game-list .game-time i {
+    background-size: 67px 57px;
+    background-image: url(../wangyi-img/index_1_z_b307af4.png);
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-right: 7px;
+    vertical-align: middle;
+    background-position: -37px -20px;
+    background-repeat: no-repeat;
+}
+.game-list .game-arrow {
+    position: absolute;
+    width: 15px;
+    height: 28px;
+    background: url(../wangyi-img/gt_64d61b9.png) no-repeat;
+    top: 50%;
+    right: 20px;
+    margin-top: -14px;
+}
+.f-cb:hover em{
+    color: #000;
+    font-weight: 400;
+}
+
+
+
